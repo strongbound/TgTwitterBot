@@ -18,7 +18,7 @@ async def twitter(client, message):
     event = await message.reply_text("Work on Progress...", quote=True)
     msg = message.reply_to_message
     MSG = "**Tweeted Successfully !!**"
-    ca, dl = "#PostFromTG", None
+    ca, dl = None , None
     try:
         if msg.text:
             twish = api.update_status(msg.text + "\n\n" + ca)
